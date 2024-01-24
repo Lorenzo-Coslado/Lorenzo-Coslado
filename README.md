@@ -5,7 +5,7 @@
 
 - 🌱 I’m currently learning **Javascript & SQL**
 
-- 📝 I regularly write articles on [Linkedin](linkedin.com/in/lorenzo-coslado-5ab552249)
+- 📝 I regularly write articles on [Linkedin](https://linkedin.com/in/lorenzo-coslado-5ab552249)
 
 - 📫 How to reach me **lorenzo.coslado@gmail.com**
 
