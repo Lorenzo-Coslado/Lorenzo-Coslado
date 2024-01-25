@@ -1,7 +1,7 @@
 <h1 align="center">Hi 👋, I'm Lorenzo</h1>
 <h3 align="center">A passionate student developer from La Rochelle, France</h3>
 
-- 🔭 I’m currently working on **BTS SIO SLAM**
+- 🔭 I’m currently studying on **BTS SIO SLAM**
 
 - 🌱 I’m currently learning **Javascript & SQL**
 
