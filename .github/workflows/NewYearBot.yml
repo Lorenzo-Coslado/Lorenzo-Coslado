@@ -1,6 +1,7 @@
 name: Update README
 
 on:
+  workflow_dispatch:
   schedule:
     - cron: '02 23 * * *' # Exécute le workflow tous les jours à minuit
 
