@@ -3,7 +3,7 @@ name: Update README
 on:
   workflow_dispatch:
   schedule:
-    - cron: '02 23 * * *' # Exécute le workflow tous les jours à minuit
+    - cron: '27 11 * * *' # Exécute le workflow tous les jours à 11H27 UTC et pas GMT+1
 
 jobs:
   update-readme:
