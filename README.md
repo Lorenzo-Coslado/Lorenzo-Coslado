@@ -31,9 +31,9 @@
 
 <h3 align="left">Stats:</h3>
 
-[![Les Stats GitHub de Lorenzo-Coslado](https://github-readme-stats.vercel.app/api?username=Lorenzo-Coslado)]
+![Les Stats GitHub de Lorenzo-Coslado](https://github-readme-stats.vercel.app/api?username=Lorenzo-Coslado)
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Lorenzo-Coslado)]
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Lorenzo-Coslado)
 
 
 
