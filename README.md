@@ -23,7 +23,9 @@
 
 <h3 align="left">When New Year:</h3>
 
-**244 days before 2025** ⏱ days before new years
+**243 days before 2025** ⏱ days before new years
+
+
 
 🤖 This README.md is updated by NewYearBot 
 
