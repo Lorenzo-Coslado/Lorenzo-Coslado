@@ -3,7 +3,7 @@
 
 - 🔭 I’m currently studying on **BTS SIO SLAM**
 
-- 🌱 I’m currently learning **Javascript & SQL**
+- 🌱 I’m currently learning **Express & React**
 
 - 📝 I regularly write articles on [Linkedin](https://linkedin.com/in/lorenzo-coslado-5ab552249)
 
