@@ -23,7 +23,9 @@
 
 <h3 align="left">When New Year:</h3>
 
-**48 days before 2025** ⏱ days before new years
+**47 days before 2025** ⏱ days before new years
+
+
 
 
 
