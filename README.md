@@ -1,7 +1,7 @@
 <h1 align="center">Hi 👋, I'm Lorenzo</h1>
 <h3>A passionate student developer from La Rochelle, France</h3>
 
-- 🔭 I’m currently studying on **BTS SIO SLAM**
+- 🔭 I’m currently studying **Computer Engineering** at **ESIEA**
 
 - 📫 How to reach me **lorenzo.coslado@gmail.com**
 
