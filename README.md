@@ -16,7 +16,9 @@
 
 <h3 align="left">When New Year:</h3>
 
-**40 days before 2026** ⏱ days before new years
+**39 days before 2026** ⏱ days before new years
+
+
 
 
 
