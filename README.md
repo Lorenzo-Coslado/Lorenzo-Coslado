@@ -16,7 +16,9 @@
 
 <h3 align="left">When New Year:</h3>
 
-**322 days before 2027** ⏱ days before new years
+**321 days before 2027** ⏱ days before new years
+
+
 
 🤖 This README.md is updated by NewYearBot 
 
