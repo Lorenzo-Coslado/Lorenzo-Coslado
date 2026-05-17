@@ -9,7 +9,9 @@
 
 <h3 align="left">When New Year:</h3>
 
-**229 days before 2027** ⏱ days before new years
+**228 days before 2027** ⏱ days before new years
+
+
 
 
 
