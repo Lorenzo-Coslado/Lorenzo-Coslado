@@ -5,30 +5,33 @@ on:
   schedule:
     - cron: '27 11 * * *' # Exécute le workflow tous les jours à 11H27 UTC et pas GMT+1
 
+permissions:
+  contents: write
+
 jobs:
   update-readme:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v7
 
       - name: Use Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v7
         with:
-          node-version: '14'
+          node-version: '24'
+          package-manager-cache: false
 
-      - name: Install dependencies
-        run: npm install moment
+      - name: Test NewYearBot
+        run: node --test update-readme.test.js
 
       - name: Update README
         run: node update-readme.js
 
       - name: Commit and push changes
-        uses: EndBug/add-and-commit@v7
+        uses: EndBug/add-and-commit@v10
         with:
           author_name: 'Lorenzo-Coslado'
           author_email: 'lorenzo.coslado@gmail.com'
           message: ':memo: README.md updated by NewYearBot :robot:'
-          add: '.'
+          add: 'README.md'
           push: true
-          github_token: ${{ secrets.GH_TOKEN }}

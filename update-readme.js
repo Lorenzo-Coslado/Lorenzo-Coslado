@@ -1,23 +1,29 @@
-const fs = require('fs');
-const moment = require('moment');
+const fs = require('node:fs');
+const path = require('node:path');
 
-const today = moment();
-const newYear = moment().endOf('year');
-const diffDays = newYear.diff(today, 'days');
-const nextYear = newYear.year() + 1;
+function updateReadme(content, today = new Date()) {
+  const block = /<!-- NEW-YEAR-COUNTDOWN:START -->[\s\S]*?<!-- NEW-YEAR-COUNTDOWN:END -->/;
 
-let fileContent = fs.readFileSync('README.md', 'utf8');
+  if (!block.test(content)) {
+    throw new Error('NewYearBot countdown markers not found in README.md');
+  }
 
-const marker = '<h3 align="left">When New Year:</h3>';
-const index = fileContent.indexOf(marker);
-if (index === -1) {
-  console.error('Marker not found in README.md');
-  process.exit(1);
+  const nextYear = today.getUTCFullYear() + 1;
+  const startOfDay = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate());
+  const newYear = Date.UTC(nextYear, 0, 1);
+  const days = (newYear - startOfDay) / (24 * 60 * 60 * 1000);
+
+  return content.replace(block, [
+    '<!-- NEW-YEAR-COUNTDOWN:START -->',
+    `**${days} ${days === 1 ? 'day' : 'days'} until ${nextYear}.**`,
+    '<!-- NEW-YEAR-COUNTDOWN:END -->',
+  ].join('\n'));
 }
 
-fileContent = fileContent.replace(/\*\*\d+ days before \d+\*\* ⏱ days before new years\n/, '');
+if (require.main === module) {
+  const readmePath = path.join(__dirname, 'README.md');
+  const content = fs.readFileSync(readmePath, 'utf8');
+  fs.writeFileSync(readmePath, updateReadme(content));
+}
 
-const readmeContent = `\n\n**${diffDays} days before ${nextYear}** ⏱ days before new years\n`;
-fileContent = fileContent.slice(0, index + marker.length) + readmeContent + fileContent.slice(index + marker.length);
-
-fs.writeFileSync('README.md', fileContent);
+module.exports = { updateReadme };
