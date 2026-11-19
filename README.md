@@ -31,7 +31,7 @@ I design and develop the following products.
 ### 🤖 NewYearBot
 
 <!-- NEW-YEAR-COUNTDOWN:START -->
-**44 days until 2027.**
+**43 days until 2027.**
 <!-- NEW-YEAR-COUNTDOWN:END -->
 
 Updated daily by [NewYearBot](.github/workflows/NewYearBot.yml) at 11:27 UTC.
